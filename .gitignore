@@ -1,0 +1,9 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+
+# docs
+/docs/_build
+
+# build artifacts
+/target

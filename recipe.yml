@@ -1,0 +1,38 @@
+context:
+  name: pyemscripten
+  version: 0.1
+
+package:
+  name: ${{ name }}
+  version: ${{ version }}
+
+source:
+  - path: .
+
+build:
+  number: 0
+
+  python:
+    skip_pyc_compilation:
+      - "**/*.py"
+
+requirements:
+  build:
+    - python
+    - cross-python_${{ target_platform }}
+    - maturin
+    - setuptools-rust
+    - rust-nightly
+  host:
+    - python
+  run:
+    - python
+
+tests:
+  - script:
+      - echo "FIXME:"
+
+about:
+  summary: emscripten test
+  license: Apache-2.0
+  license_file: LICENSE
