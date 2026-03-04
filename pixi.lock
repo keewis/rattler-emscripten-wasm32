@@ -1917,7 +1917,7 @@ packages:
 - pypi: ./
   name: pyemscripten
   version: 0.1.0
-  sha256: ce52f0c957d3ede84add77820ce5ed028c59e844720cffe40b73e04dc7c2b786
+  sha256: 921f6d0aa0e55e806fdbe0d35ef53918da820eb6f0ca62f4f8ac4f1390bb1e45
   requires_dist:
   - pytest ; extra == 'tests'
   requires_python: '>=3.10'
