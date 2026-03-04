@@ -39,10 +39,11 @@ cwd = "."
 [feature.docs.dependencies]
 sphinx = "*"
 jupyterlite-sphinx = "*"
+jupyterlite-xeus = ">=4.4.2,<5"
 
 [feature.docs.tasks]
 build-docs = { cmd = "make html", cwd = "docs" }
-host-docs = { cmd = "python -m http.server -b 127.0.0.1 -d _build 5447", default-environment = "docs", cwd = "docs" }
+host-docs = { cmd = "python -m http.server -b 127.0.0.1 -d _build/html 5447", default-environment = "docs", cwd = "docs" }
 
 [environments]
 rattler = ["rattler"]
