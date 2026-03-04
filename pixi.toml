@@ -46,6 +46,12 @@ prepare-environment = { cmd = "python prepare_environment.py", cwd = "docs" }
 build-docs = { cmd = "make html", cwd = "docs", depends-on = ["prepare-environment"] }
 host-docs = { cmd = "python -m http.server -b 127.0.0.1 -d _build/html 5447", default-environment = "docs", cwd = "docs" }
 
+[feature.tests.dependencies]
+pyjs_code_runner = "*"
+playwright = "*"
+playwright-python = ">=1.58.0,<2"
+
 [environments]
 rattler = ["rattler"]
 docs = ["docs"]
+tests = ["tests"]
