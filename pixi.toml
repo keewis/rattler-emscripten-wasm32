@@ -50,6 +50,10 @@ host-docs = { cmd = "python -m http.server -b 127.0.0.1 -d _build/html 5447", de
 pyjs_code_runner = "*"
 playwright = "*"
 playwright-python = ">=1.58.0,<2"
+mamba = ">=2.5.0,<3"
+
+[feature.tests.tasks]
+test-build = { cmd = "bash check_build.sh", cwd = "." }
 
 [environments]
 rattler = ["rattler"]

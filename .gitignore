@@ -10,3 +10,4 @@
 /target
 *.so
 *.py[co]
+/my_env
