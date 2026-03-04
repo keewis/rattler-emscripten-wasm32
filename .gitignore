@@ -4,6 +4,7 @@
 
 # docs
 /docs/_build
+/docs/environment.yml
 
 # build artifacts
 /target
