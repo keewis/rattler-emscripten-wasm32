@@ -1,6 +1,8 @@
+name: xeus-python-kernel
 channels:
   - https://prefix.dev/emscripten-forge-dev
   - https://prefix.dev/conda-forge
 dependencies:
   - xeus-python
+  - numpy
   - /home/jmagin/repos/emscripten-test/target/conda/emscripten-wasm32/pyemscripten-0.1-h7223423_0.tar.bz2

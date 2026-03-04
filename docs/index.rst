@@ -15,8 +15,13 @@ documentation for details.
    :maxdepth: 2
    :caption: Contents:
 
-.. jupyterlite::
+.. replite::
+   :kernel: xpython
    :width: 100%
    :height: 600px
    :prompt: Try Jupyterlite!
    :prompt_color: #00aa42
+
+   import pyemscripten
+
+   pyemscripten.sum_as_string(2, 3)
