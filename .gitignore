@@ -8,3 +8,4 @@
 # build artifacts
 /target
 *.so
+*.py[co]
